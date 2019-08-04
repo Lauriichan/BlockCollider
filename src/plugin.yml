@@ -1,0 +1,16 @@
+main: org.playuniverse.collider.BlockCollider
+version: 1.0
+name: BlockCollider
+author: Lauriichen
+prefix: Collider
+
+permissions:
+  blockcollider.*:
+    default: op
+    description: Allows you to execute /blockcollider
+
+commands: 
+  blockcollider:
+    description: Reload the BlockCollider config
+    permission: blockcollider.*
+    alliases: [collider]
