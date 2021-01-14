@@ -1,8 +1,3 @@
-/**
- * 
- * @author StevenLPHD
- * 
- */
 package org.playuniverse.collider.listener;
 
 import java.util.ArrayList;
@@ -66,9 +61,9 @@ public class CollideListener extends Collider {
 	}
 
 	/*
-	 * 
-	 * 
-	 * 
+	 *
+	 *
+	 *
 	 */
 
 	@Override

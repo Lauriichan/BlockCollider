@@ -1,8 +1,3 @@
-/**
- * 
- * @author StevenLPHD
- * 
- */
 package org.playuniverse.collider;
 
 import java.util.List;
@@ -43,7 +38,7 @@ public abstract class Collider implements Listener {
 	}
 
 	/*
-	 * 
+	 *
 	 */
 
 	public void reload() {

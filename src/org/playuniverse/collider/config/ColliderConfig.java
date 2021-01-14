@@ -1,8 +1,3 @@
-/**
- * 
- * @author StevenLPHD
- * 
- */
 package org.playuniverse.collider.config;
 
 import java.io.File;
@@ -13,12 +8,12 @@ import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 public class ColliderConfig {
-	
+
 	private final File file = new File("plugins//BlockCollider//config.yml");
 	private final Consumer<Boolean> consume;
 	private YamlConfiguration config;
-	
-	
+
+
 	public ColliderConfig(Consumer<Boolean> consume) {
 		this.consume = consume;
 		config = new YamlConfiguration();
@@ -36,7 +31,7 @@ public class ColliderConfig {
 			}
 		}
 	}
-	
+
 	private void load() {
 		check("collider.trigger.distance", 0.95d);
 		check("collider.trigger.onVelocity", true);
@@ -45,7 +40,7 @@ public class ColliderConfig {
 		check("collider.timer.time", 1.0f);
 		consume.accept(useTimedTask());
 	}
-	
+
 	public void save() {
 		checkFile();
 		try {
@@ -65,7 +60,7 @@ public class ColliderConfig {
 		load();
 		save();
 	}
-	
+
 	private void check(String path, Object object) {
 		if(!config.contains(path)) {
 			config.set(path, object);
@@ -75,19 +70,19 @@ public class ColliderConfig {
 	public double getCollide() {
 		return config.getDouble("collider.trigger.distance");
 	}
-	
+
 	public boolean velocityEnabled() {
 		return config.getBoolean("collider.trigger.onVelocity");
 	}
-	
+
 	public boolean directionEnabled() {
 		return config.getBoolean("collider.trigger.onDirection");
 	}
-	
+
 	public float getTime() {
 		return Double.valueOf(config.getDouble("collider.timer.time")).floatValue();
 	}
-	
+
 	public boolean useTimedTask() {
 		return config.getBoolean("collider.timer.enabled");
 	}

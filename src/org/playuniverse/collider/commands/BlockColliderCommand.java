@@ -1,8 +1,3 @@
-/**
- * 
- * @author StevenLPHD
- * 
- */
 package org.playuniverse.collider.commands;
 
 import org.bukkit.command.Command;
@@ -13,9 +8,9 @@ import org.playuniverse.collider.config.ColliderConfig;
 import net.md_5.bungee.api.ChatColor;
 
 public class BlockColliderCommand implements CommandExecutor {
-	
+
 	private final ColliderConfig config;
-	
+
 	public BlockColliderCommand(ColliderConfig config) {
 		this.config = config;
 	}
@@ -27,7 +22,7 @@ public class BlockColliderCommand implements CommandExecutor {
 		send.sendMessage(color("&8[&aCollider&8] &7Reloaded config &asuccessfully&7!"));
 		return false;
 	}
-	
+
 	private String color(String input) {
 		return ChatColor.translateAlternateColorCodes('&', input);
 	}

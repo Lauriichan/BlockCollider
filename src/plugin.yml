@@ -1,7 +1,7 @@
 main: org.playuniverse.collider.BlockCollider
 version: 1.0
 name: BlockCollider
-author: Lauriichen
+author: Lauriichan
 prefix: Collider
 
 permissions:
@@ -9,7 +9,7 @@ permissions:
     default: op
     description: Allows you to execute /blockcollider
 
-commands: 
+commands:
   blockcollider:
     description: Reload the BlockCollider config
     permission: blockcollider.*

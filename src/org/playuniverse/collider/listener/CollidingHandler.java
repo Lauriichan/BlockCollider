@@ -1,8 +1,3 @@
-/**
- * 
- * @author StevenLPHD
- * 
- */
 package org.playuniverse.collider.listener;
 
 import java.util.ArrayList;
@@ -43,7 +38,7 @@ public class CollidingHandler extends Collider {
 			detectors.clear();
 		}
 	}
-	
+
 	@Override
 	public void onEnable() {
 		for(Player player : Bukkit.getOnlinePlayers()) {
@@ -122,9 +117,9 @@ public class CollidingHandler extends Collider {
 	}
 
 	/*
-	 * 
-	 * 
-	 * 
+	 *
+	 *
+	 *
 	 */
 
 	@Override
